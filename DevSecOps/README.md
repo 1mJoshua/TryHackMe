@@ -72,14 +72,14 @@
 - Password: TryHackMe!
 
 1. Login to gitlab account.
-![alt text](DevSecOps1.png)
+![alt text](DevSecOps_Pic/DevSecOps1.png)
 
 2. Click `AoC DevSecOps / Advent-Calendar-BFC`.
-![alt text](DevSecOps2.png)
-![alt text](DevSecOps3.png)
+![alt text](DevSecOps_Pic/DevSecOps2.png)
+![alt text](DevSecOps_Pic/DevSecOps3.png)
 
 3. The `gitlab-ci.yml` file automates the project workflow upon code updates in GitLab.
-![alt text](DevSecOps4.png)
+![alt text](DevSecOps_Pic/DevSecOps4.png)
 
 ---
 
@@ -95,11 +95,11 @@
     - Developers submit merge requests for review and approval before deployment.
 
 4. Click `Merge requests` > `Merge tab` and look at `Update.gitlab-ci.yml`
-![alt text](DevSecOps5.png)
+![alt text](DevSecOps_Pic/DevSecOps5.png)
 
 5. Check the operating status of the system by viewing the job log.
 - Click `CI/CD` > `Jobs`
-![alt text](DevSecOps6.png)
+![alt text](DevSecOps_Pic/DevSecOps6.png)
 
 6. Go visit website by looking port at `gitlab-ci.yml` file.
 ```yml
@@ -109,23 +109,23 @@ test:
     - docker run -d --name $CONTAINER_NAME -v $(pwd)/public/:/usr/local/apache2/htdocs/ -p 9081:80 httpd:latest
 ```
 - Website: `http://10.10.31.78:9081/`
-![alt text](DevSecOps7.png)
+![alt text](DevSecOps_Pic/DevSecOps7.png)
 
 7. Click `CI/CD` > `Pipelines`.
-![alt text](DevSecOps8.png)
+![alt text](DevSecOps_Pic/DevSecOps8.png)
 
 8. Click `Passed` > `Test`
 - The "testing" phase involves various actions. Lots of damage to the calendar!
-![alt text](DevSecOps9.png)
+![alt text](DevSecOps_Pic/DevSecOps9.png)
 
 9. Click `Repository` > `Commits`.
-![alt text](DevSecOps10.png)
+![alt text](DevSecOps_Pic/DevSecOps10.png)
 
 10. Find the commit that contains the source code that Delf Lead should add named `Adding test deploy pipeline for calendar`.
-![alt text](DevSecOps11.png)
+![alt text](DevSecOps_Pic/DevSecOps11.png)
 
 11. Click `Project Information` > `Activity`.
-![alt text](DevSecOps12.png)
+![alt text](DevSecOps_Pic/DevSecOps12.png)
 
 ---
 
@@ -156,16 +156,16 @@ test:
 
 - Website: `http://10.10.116.216:3000/`
 1. Login account: `guest:password123`
-![alt text](new_devsecops1.png)
-![alt text](new_devsecops2.png)
+![alt text](DevSecOps_Pic/new_devsecops1.png)
+![alt text](DevSecOps_Pic/new_devsecops2.png)
 
 - Another website: `http://10.10.116.216:8080/`
 2. Login credentials: `admin:admin`
-![alt text](new_devsecops3.png)
-![alt text](new_devsecops4.png)
+![alt text](DevSecOps_Pic/new_devsecops3.png)
+![alt text](DevSecOps_Pic/new_devsecops4.png)
 
 3. Look at `gift-wrapper-build` and you will see `Jenkinsfile`
-![alt text](new_devsecops5.png)
+![alt text](DevSecOps_Pic/new_devsecops5.png)
 - Jenkinsfile if the data warehouse is not protected An attacker can modify the pipeline file to execute commands on the build system.
 - Attackers can control the build process by modifying `make || true` to `whoami`.
 - Because the Jenkinsfile allows you to run shell commands as you can see on line 13.
@@ -228,7 +228,7 @@ Password for 'http://guest@10.10.116.216:3000':
 6. Click the gift-wrapper-build → gift-wrapper-pipeline → main
 7. Click Build
 8. Click Changes → console output
-![alt text](new_devsecops6.png)
+![alt text](DevSecOps_Pic/new_devsecops6.png)
 
 ---
 
