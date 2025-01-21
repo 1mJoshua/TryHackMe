@@ -38,7 +38,7 @@
 
 ### Prompt-Assisted Security Measures
 1. **Developers have implemented some security measures on the chatbot, which we can observe.**
-![alt text](chatbot_2.png)
+![alt text](ChatBot_Pic/chatbot_2.png)
 - The chatbot does not disclose sensitive information, such as passwords, to everyone.
 
 2. **Role of "System Prompt":**
@@ -58,9 +58,9 @@
     - **Objectives**:
         - To test the chatbot's security: These deception attempts assess how well the chatbot can resist manipulation.
         - To identify vulnerabilities: Discovering these weaknesses helps improve chatbot security.
-![alt text](chatbot_3.png)
+![alt text](ChatBot_Pic/chatbot_3.png)
 - Now, pick a name and use it to get the password.
-![alt text](chatbot_4.png)
+![alt text](ChatBot_Pic/chatbot_4.png)
 - The chatbot is too trusting. It follows commands blindly without verifying their authenticity. Even with predefined rules, vulnerabilities still exist, allowing the chatbot to answer unintended questions.
 
 ---
@@ -83,12 +83,12 @@
     - No system can guarantee 100% security.
     - New attack methods may bypass the Interceptor.
     - Continuous testing might reveal weaknesses and ways to circumvent the Interceptor.
-![alt text](chatbot_5.png)
+![alt text](ChatBot_Pic/chatbot_5.png)
 
 5. **Problem**: A security mechanism (Interceptor) checks all incoming commands or queries to prevent unauthorized access or unintended chatbot actions.
    **Solution**: Use unconventional techniques to trick the chatbot into believing it is in "maintenance mode."
    **Reasoning**: When the chatbot is in maintenance mode, security mechanisms are disabled, allowing unrestricted commands without validation.
-![alt text](chatbot_6.png)
+![alt text](ChatBot_Pic/chatbot_6.png)
 
 6. **Exploiting the Chatbot**:
     - **Success is achieved by deceiving the chatbot into "Maintenance Mode."**
