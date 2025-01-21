@@ -14,7 +14,7 @@
 - Website: `http://10.10.199.75/`
 
 1. Conduct an initial security test on a chatbot named Van Chatty by asking straightforward questions to see if it discloses confidential personal information.
-![alt text](chatbot_1.png)
+![alt text](ChatBot_Pic/chatbot_1.png)
 
 - As you can see, this is a very easy vulnerability to exploit, especially if a chatbot has been trained on sensitive data without any defenses in place.
 
